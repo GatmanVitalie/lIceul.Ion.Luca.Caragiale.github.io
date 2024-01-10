@@ -14,10 +14,10 @@
 // });
 
 
+var antet_width = 13;
 
-
-var screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
-let hamburgerButon = document.getElementById('HamburgerButton'); // Changed to getElementById
+var screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth;
+let hamburgerButon = document.getElementById('HamburgerButton'); 
 
 window.addEventListener('load', function () {
     resize();
@@ -25,9 +25,9 @@ window.addEventListener('load', function () {
 
 function resize() {
 
-    screenWidthInCm = window.devicePixelRatio / window.innerWidth * 1000000 ;
+    screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth ;
     //console.log('resize', screenWidthInCm);
-    if (window.innerWidth / document.getElementById('dpi').offsetWidth < 13) {
+    if (screenWidthInCm < 13) {
         hamburgerButon.style.display = "block";
         document.getElementById('contcatns_container').style.display = "flex";
         document.getElementById('burger_butons').style.display = "flex";
@@ -39,7 +39,7 @@ function resize() {
         document.getElementById('dreapta').style.display = "flex";
     }
     console.log(window.innerWidth / document.getElementById('dpi').offsetWidth);
-    fitt();
+   
 }
 
 window.onload = function () {
@@ -56,6 +56,9 @@ function togle(lines) {
     lines.classList.toggle("change");
     burger_butons.classList.toggle("burger_butons");
 }
+
+
+/*
 
 
 const articles = document.querySelectorAll('.article');
@@ -193,3 +196,4 @@ function fitt() {
     });
     // // document.getElementById("article").style.transform = "
 }
+*/
