@@ -14,17 +14,14 @@ function fitt() {
 
     // } else {
 
-    // }
+    // 
 
-    var desktopPreference = localStorage.getItem('desktopViewPreference');
-    if (desktopPreference === 'true') {
-        // User prefers desktop view
-        // Code to load desktop version or handle accordingly
+
+    var viewMode = getCookie("view-mode");
+    if (viewMode == "desktop") {
         console.log('User prefers desktop view.');
         document.body.style.backgroundColor = 'red';
-    } else {
-        // User prefers mobile view or default behavior
-        // Code to load mobile version or handle accordingly
+    } else if (viewMode == "mobile") {
         console.log('User prefers mobile view.');
         document.body.style.backgroundColor = 'white';
     }
