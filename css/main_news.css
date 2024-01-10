@@ -1,0 +1,161 @@
+.noi_in_actiune {
+  display: flex;
+  z-index: 1  ;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1cm;
+  padding-bottom: 3cm;
+  background-color: #ffff;
+  height: auto !important;
+}
+
+.title_show {
+  font-size: 1.6cm;
+  color: #000;
+  text-decoration: underline #fdc800;
+  top: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    
+    margin-top: 2cm;
+    margin-bottom: 1cm;
+}
+
+.articole {
+  display: flex;
+  width: 95%;
+  max-width: 39cm;
+  /* padding: 5cm; */
+  height: auto !important;
+  flex-direction: row;
+  row-gap: 1cm;
+  column-gap: 1.6cm;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 12cm;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_holder {
+  margin-top: 5mm !important;
+  margin-bottom: -1mm;
+}
+
+.articole h2 {
+  font-size: 0.7cm;
+  color: rgb(41, 41, 41);
+  margin-bottom: 0%;
+  text-decoration: underline 0.8mm rgb(253, 200, 0);
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.image_holder {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 10 / 6;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+  border-radius: 0.2cm;
+  -webkit-border-radius: 0.2cm;
+  -moz-border-radius: 0.2cm;
+  -ms-border-radius: 0.2cm;
+  -o-border-radius: 0.2cm;
+}
+
+.image_holder img {
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.articole a {
+  font-size: 0.6cm;
+  color: rgb(41, 41, 41);
+  top: 0px;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 1mm;
+}
+
+.articole h3 {
+  font-size: 0.5cm;
+  color: rgb(41, 41, 41);
+  text-decoration: underline 1mm rgb(253, 200, 0);
+  top: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.button_holder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2mm;
+}
+
+.button_holder button {
+  width: 1.35cm;
+  height: 1.35cm;
+
+  border-radius: 1.6mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_holder img {
+  object-fit: contain;
+  aspect-ratio: 1/1 !important;
+  width: auto;
+  height: 82%;
+}
+
+.facebook {
+  background-color: #0866ff !important;
+}
+
+.instagram {
+  border-radius: 0% !important;
+  -webkit-border-radius: 0% !important;
+  -moz-border-radius: 0% !important;
+  -ms-border-radius: 0% !important;
+  -o-border-radius: 0% !important;
+  padding: 0%;
+}
+
+.instagram img {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #ffff;
+  object-fit: contain !important;
+  
+}
+
+.twiter {
+  background-color: #000000;
+}
+
+.twiter img {
+  width: 90%;
+  height: 90%;
+}
+
+.github {
+  background-color: #24292f;
+}

@@ -1,0 +1,24 @@
+#burger_butons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 0px;
+  transition: 2s ease-in-out;
+  -webkit-transition: 0.8s ease;
+}
+
+#burger_butons button {
+  background-color: #ffffff;
+  width: 90%;
+  height: 3.6cm;
+  min-height: 3.6cm;
+  font-size: 1cm;
+  border: none;
+  border-bottom: 0.1cm solid #333;
+}
+
+.burger_butons  {
+  height: 1000px !important;
+  display: flex;
+}
